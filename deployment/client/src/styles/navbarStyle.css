@@ -1,0 +1,233 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+  }
+  
+  .navbar__site-name {
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbar__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar__avatar-frame {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    /* margin-right: 10px; */
+  }
+  
+  .navbar__avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .navbar__logout {
+    font-size: large;
+    font-weight: bold;
+    font-family: inherit;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    height: 40px;
+  }
+
+  .navbar__logout_icon{
+    width:40px;
+    height:40px;
+  }
+  
+  .navbar__logout:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 20px;
+  }
+
+  .user-trips{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(212, 0, 255,0.7);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    height: 40px;
+  }
+
+  .user-trips:hover{
+    background-color: rgba(212, 0, 255,0.9);
+    border-radius: 20px;
+  }
+
+  .user-trips-dialog{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 370px;
+    /* background-color: rgba(0,0,0,0.7); */
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .dialog-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    /* gap: 0.3rem; */
+  }
+
+  .no-trips{
+    margin: 0;
+    padding: 2rem 0;
+    font-size: large;
+  }
+
+  .user-menu-dialog{
+    width:max-content;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+    box-sizing: border-box;
+    /* backdrop-filter: blur(3px);  */
+  }
+  
+  dialog{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255,255,255,0.2);
+    max-width: 370px;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  dialog::backdrop{
+    backdrop-filter: blur(3px);
+  }
+
+  .modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  /* all text buttons */
+
+  .red-text-btn, .blue-text-btn, .green-text-btn{
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 5px 12px;
+    margin: 0.5rem auto;
+    border-radius: 5px;
+    transition: 250ms ease-in-out;
+    height: 30px;
+  }
+
+  .red-text-btn:hover, .blue-text-btn:hover, .green-text-btn:hover{
+    border-radius: 20px;
+  }
+
+  .red-text-btn{
+    background-color: rgb(255, 73, 73);
+  }
+  .blue-text-btn{
+    background-color: rgb(96, 96, 255);
+  }
+  .green-text-btn{
+    background-color: rgb(96, 255, 96);
+  }
+
+  .red-text-btn:hover{
+    background-color: rgb(255, 26, 26);
+  }
+  .blue-text-btn:hover{
+    background-color: rgb(39, 39, 255);
+  }
+  .green-text-btn:hover{
+    background-color: rgb(39, 255, 39);
+  }
+
+  /* all icon buttons */
+
+  .red-icon-btn, .blue-icon-btn, .purple-icon-btn{
+    border: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 250ms ease-in-out;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .red-icon-btn:hover, .blue-icon-btn:hover, .purple-icon-btn:hover{
+    border-radius: 5px;
+  }
+
+  /* .red-icon-btn{
+    background-color: rgb(255, 73, 73);
+  }
+
+  .blue-icon-btn{
+    background-color: rgb(96, 96, 255);
+  }
+
+  .purple-icon-btn{
+    background-color: #bc65ff;
+  } */
+
+  .red-icon-btn:hover{
+    background-color: rgba(255,0,0,0.5);
+  }
+
+  .blue-icon-btn:hover{
+    background-color: rgba(0, 119, 255, 0.7);
+  }
+
+  .purple-icon-btn:hover{
+    background-color: rgba(212, 0, 255,0.5);
+  }
+
+  .date-time-ip{
+    background-color: rgba(255,255,255,0.7);
+    border:none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: inherit;
+  }
+
+  .contact-ip{
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border:none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: large;
+    font-family: inherit;
+  }

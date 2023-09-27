@@ -1,0 +1,64 @@
+.dest{
+    width: 12ch;
+    margin-right: 0.2rem;
+}
+
+.tripDate{
+  width:10ch;
+}
+
+.trip {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  color: white;
+  background-color: #3c3c3c82;
+  border-radius: 5px;
+  
+  backdrop-filter: blur(3px);
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.view, .modify{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.view{
+  width: 90%;
+  justify-content: flex-start;
+  gap: 0.2rem;
+}
+
+.modify{
+  justify-content: flex-end;
+  gap: 0.2rem;
+}
+
+.icon-btn{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.update-button:hover{
+  background-color: rgb(116, 214, 250);
+}
+
+.delete-button:hover{
+  background-color: rgb(249, 112, 112);
+}
+
+.search-button:hover{
+  background-color: rgb(109, 255, 148);
+}
