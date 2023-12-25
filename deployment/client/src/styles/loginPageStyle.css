@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+.page1{
+  background: #100721;
+}
 #google-one-tap-button{
     display: flex;
     flex-direction: column;
@@ -7,4 +12,131 @@
     max-height: 80%;
     margin: 1rem auto;
     gap: 1rem;
+}
+#First_page{
+
+    opacity:70%;
+    width: 100%;
+    color: blue;
+    font-family: 'Skranji', cursive;
+
+}
+#First_page_text{
+    padding-left: 500px;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    opacity: 100%;
+    font-family: 'Skranji', cursive;
+    color: blue;
+    position: relative;
+    bottom: 80px;
+    right: 120px;
+    font-size: 2em;
+}
+
+#firstimg{
+    z-index: -2;
+    opacity: 100%;
+    width: 100%;
+    max-width: fit-content;
+}
+img{
+    z-index: -1;
+    
+}
+#first_text{
+    color: blue;
+}
+
+.Topic2{
+  font-size: 2.5rem;
+  text-align: center;
+  color:chocolate;
+  padding: 20px;
+}
+.containerr {
+  position: relative;
+  
+  
+}
+
+.image {
+  opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  max-width: fit-content;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.containerr:hover .image {
+  opacity: 0.3;
+}
+
+.containerr:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.carousel .control-dots{
+  margin: 0px;
+}
+
+.carousel .thumbs-wrapper {
+  margin: -20px;
+  overflow: hidden;
+}
+.textt{
+  font-family: 'rowdies';
+  margin-left: 300px;
+  width: 650px;
+  height: 300px;
+  position:relative;
+  bottom: 500px;
+  border: 1px double;
+  box-sizing:border-box;
+  padding: 10px;
+  box-shadow:5px 10px #0e0632;
+  font-size: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(192, 240, 194, 0.3);
+  
+}
+h1{
+  color:rgb(2,0,36);
+  
+}
+.firstDiv{
+  width: 1210px;
+  height: 700px;
+
+  
+}
+
+.carousel .control-prev.control-arrow {
+  margin-left: 60px;
+}
+.carousel .control-next.control-arrow{
+  margin-right: 60px;
+}
+
+.image{
+  width: 80%;
+
 }
