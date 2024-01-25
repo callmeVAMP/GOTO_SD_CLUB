@@ -61,7 +61,7 @@ const ShowCompanions : React.FC<{email:string, name:string}> = ({email, name}) =
                     <>
                     
                     <InfoCard key={5} content={`You can go to ${destination} with anyone of them...`}/>
-                    {data.map((item) => (
+                    {data.map((item) => ( 
                         <div className="companion-card" key={item._id}>
                             <CompanionCard avatar={item.avatar} name={item.name} time={item.time} ph={item.ph_no} wa={item.wa_no} email={item.email}/>
                         </div>
@@ -69,7 +69,7 @@ const ShowCompanions : React.FC<{email:string, name:string}> = ({email, name}) =
                     {!pressed ?
                         <>
                         <InfoCard key={6} content={`Don't wanna go with them?
-                        We'll let you know when there are more companions ;-)`}/>
+                        We'll let you know when there are more companions 🙂`}/>
                         <button className='getNotified-btn' onClick={()=>{getSubscriptionObject(email);setPressed(true);handleNotificationSubscriptionPopup();}}>Get Notified!</button>
                         </>
                         :<InfoCard key={7} content='You will be notified when there are more companions for you.'/>
