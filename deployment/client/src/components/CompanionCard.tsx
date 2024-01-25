@@ -89,12 +89,15 @@ const CompanionCard : React.FC<companionCardProps> = ({avatar, name, time, ph, w
                   <div className="avatar-frame">
                       <img src={avatar} alt="User Avatar" className="avatar" />
                   </div>
-                  <div className="companion-card__name">{name}</div>
+              </div>
+              <div className="center">
+                <div className="companion-card__name">Name: {name}</div>
+                <div>Time:{time}</div>
+
               </div>
               <div className="right">
-                  <div>{time}</div>
                   <button className="blue-icon-btn contact-frame" onClick={openModal}>
-                      <img src="/icons/contact.png" alt="contact-details" className="contact-icon" />
+                      <img src="/icons/more-info.png" alt="contact-details" className="contact-icon" />
                   </button>
               </div>
       </>
