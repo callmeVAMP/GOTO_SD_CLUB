@@ -46,27 +46,23 @@ const Images=()=>{
 
 
     return (
-      <>
-        
+      <>  <div className="container scroll-1">
           {image.map((data) => (
-            <div className="flip-card ">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img  src ={data.src} alt ="img1" className="card-img-top" />
-                    <h3>{data.name}</h3>
-                </div>    
-                  <div class="flip-card-back">
-                      <p>Location:{data.location}</p>
-                      <p>Know More: <a href={data.Know_More}>Click Here</a></p>
-                  </div>
-                </div>
-              
+              <div className="card">
+              <div className="card__image">
+                <img  src ={data.src} width="100%"/>
+              </div>
+              <div className="card__content">
+                  <span class="card__title">{data.name}</span>
+                  <p class="card__describe">
+                      {data.location}
+                      
+                  </p>
+              </div>
             </div>
               ))}
-         
+          </div>
       </>
-
-
    )
  }
 ;
