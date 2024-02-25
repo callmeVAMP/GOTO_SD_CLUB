@@ -3,12 +3,9 @@ import InfoCard from '../components/InfoCard';
 import "../styles/loginPageStyle.css"
 import loginPageProps from '../types/loginPageProps';
 import {GoogleLogin} from '@react-oauth/google';
-//import { StyledEngineProvider } from '@mui/material/styles';
 //import "../styles/images.css";
-//import sass from 'sass';
-
-//import images from "../types/images";
-//import TitlebarBelowImageList from '../types/TitlebarBelowImageList';
+import Images from "../components/Images";
+//import TitlebarBelowIma;geList from '../types/TitlebarBelowImageList';
 import Carousel from "../types/Carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 const LoginPage : React.FC<loginPageProps> = ({handleLoginSuccess}) => {
@@ -16,10 +13,10 @@ const LoginPage : React.FC<loginPageProps> = ({handleLoginSuccess}) => {
         <>
             <div className="page1">
                 <div className="firstDiv">
-                    <img id = "first_img" src="https://i.ytimg.com/vi/VVNt3cLjX3c/maxresdefault.jpg" alt="" width="100%" />
+                    <img id = "first_img"  src="https://2.bp.blogspot.com/-ZupOUlwkioY/XEQG-0Yqt9I/AAAAAAAAA6c/f2X7fSM7FXUIOqUgtybgPjJBJmWv9ImEwCKgBGAs/w2560-h1600-p-k-no-nu/minimalist-night-city-buildings-23-4k.jpg" alt=""  /> 
+                    
+                    
                     <div className="textt"> <h1>Let's Begin The Journey TOGETHER!!!</h1>
-                    
-                    
                     <div id="google-one-tap-button">
                     
                         
@@ -45,7 +42,8 @@ const LoginPage : React.FC<loginPageProps> = ({handleLoginSuccess}) => {
                     </div>
                 </div>
                 <div className="Topic2">Places you can VISIT</div>
-                <Carousel />
+                <Images />
+
                 
             </div>
             
