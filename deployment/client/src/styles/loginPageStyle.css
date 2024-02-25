@@ -1,7 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
-.page1{
-  background: #100721;
+body{
+  font-family: 'rowdies';
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 38%, rgba(3,32,165,1) 89%);
 }
 #google-one-tap-button{
     display: flex;
@@ -19,25 +20,23 @@
     width: 100%;
     color: blue;
     font-family: 'Skranji', cursive;
-
 }
 #first_img{
   width:100%;
   max-width:max-content;
   height:auto;
 }
-
-
-
 #first_text{
     color: blue;
 }
 
 .Topic2{
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
-  color:chocolate;
+  color:aliceblue;
   padding: 20px;
+  position: relative;
+  bottom: 300px;
 }
 
 
@@ -59,29 +58,12 @@
   -ms-transform: translate(-50%, -50%)
 }
 
-
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.carousel .control-dots{
-  margin: 0px;
-}
-
-.carousel .thumbs-wrapper {
-  margin: -20px;
-  overflow: hidden;
-}
 .textt{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   font-family: 'rowdies';
   margin-left: 40vh;
-  
   width: 100vh;
   height: 50vh;
   position:relative;
@@ -90,21 +72,22 @@
   box-sizing:border-box;
   
   box-shadow:5px 10px #0e0632;
-  font-size: 1.5em;
+  font-size: 3em;
   padding-top: 10vh;
-  
   background-color: rgba(192, 240, 194, 0.3);
   
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:1200px) {
   .textt{
     padding-top: 5vh;
-    margin-left: 15%;
-    width:70%;
-    height: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    height: 70%;
     position:relative;
-    bottom: 30vh;
+    bottom: 80vh;
     font-size: 0.5em;
+    margin-top: 11%;
   }
   #first_img{
     height:50%
@@ -113,19 +96,22 @@
 h1{
   color:rgb(2,0,36);
   padding-left: 10%;
+  font-size: 3rem;
+  padding-top: 5%;
 }
-.firstDiv{
-  
 
+@media screen and (max-width:800px) {
   
-}
-@media screen and (max-width:500px) {
-  .firstDiv{
-    width: auto;
-    height: 80%;
-  
-    
+  #first_img{
+    width:100%;
+    height: 600px;
   }
+  h1{
+    color:rgb(2,0,36);
+    font-size: 2rem;
+    padding-top: 5%;
+  }
+  
 }
 .containerr{
   display: flex;
